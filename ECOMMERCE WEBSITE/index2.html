@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Bazunu Irene">
+  <meta name="title" content="Jomah's Kitchen">
+  <meta name="description" content="African dishes including Nigerian dishes delivery services>
+  <meta name="keywords" content="Nigerian foods, Nigerian dishes, Nigerian culture, egusi soup, okra soup">
+  <title>Jomah's kitchen</title>
+  <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/72fc41dd23.js" crossorigin="anonymous"></script>
+</head>
+<!-- body section container -->
+<body>
+  <!-- header section -->
+  <header>
+    <!-- #logo -->
+    <figure id="logo">
+      <img src="./images/JomahsKitch.png" width="300" height="200" alt="Jomah logo">
+    </figure>
+    <!-- #strong text -->
+    <strong id="strong"><h1>Jomah's Kitchen</h1></strong>
+    <!-- #hamburger menu button -->
+    <button id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <!-- #nav section -->
+    <nav id="nav">
+      <ul>
+        <li><a href="#" id="register">Register</a></li>
+        <li><a href="#">Set Up</a></li>
+        <li><a href="#">Customize</a></li>
+        <li>
+          <a href="#">Pay
+            <select name="payment_option" id="payment_option">          
+              <option value="paypal"></option>
+              <option value="bank transfer">Bank Transfer</option>
+              <option value="master credit card">Master Card</option>
+              <option value="verve debit card">Verve Card</option>
+              <option value="visa credit card">Visa Card</option>
+              <option value="opay card">Opay</option>
+              <option value="paypal">Paypal</option>
+            </select>
+          </a>
+        </li>
+      </ul>
+      <!-- #nav #form search -->
+      <form action="api/login" id="form" method="post">
+        <input type="search" name="search" id="search" placeholder="type your search here">
+        <!-- #form #searches button -->
+        <button type="submit" onclick="sub()" id="searches"><a href="#">search</a></button>
+      </form>
+    </nav>
+  </header>
+  <!-- main section -->
+  <main>
+    <!-- #overlay section-->
+    <section id="overlay">
+      <!-- #product grid -->
+      <figure id="product-grid">
+        <img id="img" src="./images/banga Soup.jpeg" alt="">
+        <img id="imgs" src="./images/continental dish.jpeg" alt="Egusi">
+        <img id="imag" src="./images/Edikaikong Soup.jpg" alt="Edikaikong">
+      </figure>
+      <!-- #overlay #fo form -->
+      <form id="fo" action="api/login" method="post">
+        <strong id="h3"><h3>Get $90 off</h3></strong>
+        <p>Get $90 off across your first 4 deliveries + 1 free gift. Includes free shipping when you order today!</p>
+        <label for="promotion"></label>
+        <input type="text" id="promotion" placeholder="Promotion code">
+        <label for="first name"></label>
+        <input type="text" id="first name" placeholder="First name">
+        <label for="Zip code"></label>
+        <input type="text" id="Zip code" placeholder="Zip code">
+        <label for="email"></label>
+        <input type="text" id="email" placeholder="Email address">
+        <label for="password"></label>
+        <input type="text" id="password" placeholder="Choose a password">
+        <!-- #overlay #fo #sub button -->
+        <button type="submit" onclick="sub()" id="sub"><a href="#">Get Started</a></button>
+      </form>
+    </section>
+  </main>
+  <!-- #features section -->
+  <section id="features">
+    <figure id="veg">
+      <img src="./images/pepper soup.jpg" alt="Easy and Convenient"/>
+      <figcaption id="fig">Easy and Convenient<p>Quick meal kits and premade meals,<br> delivered to your door</p> </figcaption>
+    </figure>
+    <figure id="yam">  
+      <img src="./images/Yam and egg.jpeg" alt="Easy and Convenient"/>
+      <figcaption id="fig">The Best Quality<p>Enjoy organic fresh produce and clean <br> ingredients. Proud certified organic handler</p></figcaption>
+    </figure>
+    <figure id="efo">
+      <img src="./images/Efo-Iro Soup.jpg" alt="Easy and Convenient"/>
+      <figcaption id="fig">Meal Planning Made Easy<p>Put meal prepping on autopilot <br> to eat well all week</p></figcaption>
+    </figure>
+  </section>
+  <!-- #menu section -->
+  <section id="menu">
+    <!-- #menu h2 -->
+    <h2>On the Menu This Week <br> Meals starting at $9.99 per serving</h2>
+    <!-- #menu #item sub-sections -->
+    <section id="item">
+      <article>
+        <figure id="african">
+          <img src="./images/african dish.jpeg" alt="Sweet potato and black bean chili cheese fries with jicama sticks">
+          <figcaption>Sweet potato and black bean chili cheese <br> fries with jicama sticks. Gluten-Free Friendly,<br>Mediterranean, Pescatarian, Soy-Free, Vegetarian</figcaption>
+        </figure>
+        <p>Serves 2</p>
+        <!-- #item #art button -->
+        <button type="submit" onclick="sub()" id="art"><a href="#"></a>Order Now</button>
+      </article>
+      <article>
+        <figure id="egusi">
+          <img src="./images/Egusi soup.jpeg" alt="Sweet potato and black bean chili cheese fries with jicama sticks">
+          <figcaption>White bean panzanella with tomatoes, fresh <br> mozzarella, and fried eggs, Family Friendly,<br>Pescatarian, Protein Plus, Soy-Free, Vegetarian</figcaption>
+        </figure>
+        <p>Serves 2</p>
+        <!-- #item #art button -->
+        <button type="submit" onclick="sub()" id="art"><a href="#"></a>Order Now</button>    
+      </article>
+      <article>
+        <figure id="jollof">
+          <img src="./images/jollof rice.jpeg" alt="Sweet potato and black bean chili cheese fries with jicama sticks">
+          <figcaption>Quick pesto pappardelle with baby broccoli and <br> mushrooms. No Added Sugar, Pescatarian,<br>Soy-Free, Vegetarian</figcaption>
+        </figure>
+        <p class="serve">Serves 2</p>
+        <!-- #item #art button -->
+        <button type="submit" onclick="sub()" id="art"><a href="#"></a>Order Now</button>
+      </article>
+    </section>
+  </section>
+  <!-- #gift section -->
+  <section id="gift">
+    <!-- #gift #a_gift sub-section -->
+    <article id="a_gift">
+      <h2>A gift in your first box</h2>
+      <p>Order today and you'll receive a free gift!</p>
+    </article>
+    <!-- #a_gift #su button -->
+    <button type="submit" onclick="sub()" id="su"><a href="#"></a> Claim Your Gift</button>
+    <!-- #gift #choose sub-section -->
+    <article id="choose">
+      <h2>Choose Easy—or Easier</h2>
+      <p id="p">Meal Kits for when you want to get hands-on, Pre-Made Meals when you don't. Choose one style or mix and match.</p>
+      <ul>
+        <article class="ready">
+          <li>
+            <figure>
+              <img src="./images/moi moi.jpeg" alt="">
+              <figcaption>Meal Kits</figcaption>
+            </figure> 
+          </li>
+          <p id="ready">Ready in 15-40 minutes
+          <br>Pre-measured ingredients arrive ready to cook
+          <br>Learn new skills while easily creating impressive meals
+          </p>
+          <!-- #choose #butto button -->
+          <button type="submit" onclick="sub()" id="butto"><a href="#"></a>Find Your Meal Plan</button>
+        </article>
+        <article class="oatmeal">
+          <li id="oatmeal">
+            <figure id="figure">
+              <img src="./images/oatmeal-pancakes.jpg" alt="">
+              <figcaption>Fresh and Ready</figcaption>
+            </figure> 
+          </li>
+          <p id="eat">Premade and ready in as little as 4 minutes
+          <br>Arrives in a heat-safe tray, for microwave or oven
+          <br>Compostable tray means zero mess, zero cleanup
+          </p>
+          <!-- #choose #butt button -->
+          <button type="submit" onclick="sub()" id="butt"><a href="#"></a>Find Your Meal Plan</button>
+        </article>
+      </ul>
+    </article>
+  </section>
+  <!-- #diet section -->
+  <section id="diet">
+    <!-- #diet #Diet sub-section -->
+    <article id="Diet">
+      <strong id="h2"><h2>Meal Delivery for Any Diet</h2></strong>
+      <strong id="p"><p>Choose a meal plan or meal delivery plan for your taste,<br>or mix and match any of our meal plans</p></strong>
+      <!-- #diet #subm button -->
+      <button type="submit" onclick="sub()" id="subm"><a href="#"></a>Find Your Meal Plan
+        <select name="meal_plan" id="meal_plan">          
+          <option value="meal plan for breakfast">Breakfast</option>
+          <option value="meal plan for brunch">Brunch</option>
+          <option value="meal plan for elevenses">Elevenses</option>
+          <option value="meal plan for lunch">Lunch</option>
+          <option value="meal plan for Tea">Tea</option>
+          <option value="meal plan for supper">Supper</option>
+          <option value="meal plan for dinner">Dinner</option>
+        </select>
+      </button>
+    </article>
+    <!-- #lunch sub-section -->
+    <article id="lunch">
+      <strong id="h2"><h2>Let's do lunch. And breakfast</h2></strong>
+      <strong id="p"><p>Meals, snacks too. Add Market items to your <br> basket for feel-good deliciousness, any time of day</p></strong>
+      <figure>
+        <img src="./images/moi moi.jpeg"  alt="">
+      </figure>
+      <!-- #lunch #submt button --> 
+      <button type="submit" id="submt" onclick="sub()"><a href="#"></a>Check it Out</button>
+    </article>
+  </section>
+  <!-- #testimonials section -->
+  <section id="testimonials">
+    <strong class="test"><h2>Customers ❤️ Jomah's Kitchen</h2></strong>
+    <ul id="testimonial">
+      <li>
+        <p>“Our family is so happy looking forward to cooking and eating together every night. <br> Jomah's Kitchen has been a complete life saver and joy maker for us!”</p>
+        <p><span>— Theresa, Lake Worth, FL</span></p>
+      </li>
+      <li>
+        <p>“Thank you SO MUCH for your delicious healthy meals. <br> I am losing weight, I feel good and during this pandemic I am thrilled to receive nutritious meals. <br> I don’t have to worry about shopping and I have learned to cook better by following your recipes.”</p>
+        <p><span>— Corinna, Monrovia, CA</span></p>
+      </li>
+      <li>
+        <p>“This is night 3 of making your meals and we are literally floored. <br> Everything has been so fresh and flavorful and the directions are set out perfect. <br> My 7 year old who has done multiple pre-packaged food deliveries, said this by far is her favorite.”</p>
+        <p><span>— Matthew, Chicago, TX</span></p>
+      </li>
+    </ul>
+  </section>
+  <!-- footer section -->
+  <footer class="footer">
+    <ul>
+      <li>
+        <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+        <a href="#"><i class="fa-brands fa-rocketchat fa-xl"></i></a>
+        <a href="#"><i class="fa-solid fa-phone fa-xl"></i></a>
+      </li>
+    </ul>
+    <p>© 2024 Jomah's Kitchen version 5.15.0</p>
+    <p><a href="#">Terms</a>|<a href="#">Privacy</a>|<a href="#">Accessibility</a>|<a href="#">Security</a></p>
+  </footer>
+
+
+
+  
+  <script src="script.js" type="text/javascript"></script> 
+</body>
+</html>
